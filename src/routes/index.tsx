@@ -29,7 +29,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Appartements meublés de standing 1 à 3 chambres à Kégué. Réservez par WhatsApp ou Email.",
+          "LUXCO APPARTEMENT — Appartements meublés de standing 1 à 3 chambres à Kégué. Luxe, confort et élégance. Réservez par WhatsApp ou Email.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
