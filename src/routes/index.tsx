@@ -1,24 +1,59 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Rooms } from "@/components/Rooms";
+import { Events } from "@/components/Events";
+import { Storage } from "@/components/Storage";
+import { Pricing } from "@/components/Pricing";
+import { Gallery } from "@/components/Gallery";
+import { Testimonials } from "@/components/Testimonials";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
-  component: Index,
+  component: IndexPage,
+  head: () => ({
+    meta: [
+      { title: "LUXCO APPARTEMENT — Luxe & Confort à Kégué" },
+      {
+        name: "description",
+        content:
+          "LUXCO APPARTEMENT — Appartements meublés de standing 1 à 3 chambres à Kégué. Luxe, confort et élégance. Réservez par WhatsApp ou Email.",
+      },
+      {
+        property: "og:title",
+        content: "LUXCO APPARTEMENT — Luxe & Confort à Kégué",
+      },
+      {
+        property: "og:description",
+        content:
+          "Appartements meublés de standing 1 à 3 chambres à Kégué. Réservez par WhatsApp ou Email.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function IndexPage() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="min-h-screen bg-black text-white">
+      <Navbar />
+      <Hero />
+      <About />
+      <Rooms />
+      <Events />
+      <Storage />
+      <Pricing />
+      <Gallery />
+      <Testimonials />
+      <Contact />
+      <Footer />
+      <WhatsAppButton />
+    </main>
   );
 }
