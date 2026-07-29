@@ -1,6 +1,6 @@
 import { SectionHeader } from "./SectionHeader";
 import { features } from "@/lib/luxco-data";
-import { aboutImage } from "@/lib/assets";
+import { logoUrl } from "@/lib/assets";
 import { Wifi, Snowflake, Utensils, Shield, Tv, Car } from "lucide-react";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -29,11 +29,11 @@ export function About() {
 
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="relative">
-            <div className="relative overflow-hidden rounded-lg">
+            <div className="relative flex h-[450px] w-full items-center justify-center overflow-hidden rounded-lg border border-gold/20 bg-black-card p-12">
               <img
-                src={aboutImage}
-                alt="Intérieur LUXCO APPARTEMENT"
-                className="h-[450px] w-full object-cover"
+                src={logoUrl}
+                alt="Logo LUXCO APPARTEMENTS"
+                className="max-h-full w-full max-w-sm object-contain"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 -z-10 h-full w-full rounded-lg border-2 border-gold" />
