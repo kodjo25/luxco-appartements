@@ -254,7 +254,7 @@ export const eventImages = ["img_32.jpeg", "img_33.jpeg", "img_34.jpeg", "img_35
 
 export const storageItem = {
   title: "Grand Magasin de Stockage",
-  price: 150000,
+  price: 450000,
   description:
     "Grand espace de stockage sécurisé, idéal pour marchandises, matériel ou archives.",
   image: "img_36.jpeg",
