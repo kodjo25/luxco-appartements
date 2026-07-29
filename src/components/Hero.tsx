@@ -42,7 +42,7 @@ export function Hero() {
         </span>
 
         <h1 className="font-display text-5xl font-light leading-tight tracking-wide text-white md:text-6xl lg:text-7xl">
-          <span className="font-semibold text-gold">LUXCO</span> APPARTEMENT
+          <span className="font-semibold text-gold">LUXCO</span> APPARTEMENTS
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg font-light tracking-wide text-white/90 md:text-xl">
