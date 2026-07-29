@@ -25,14 +25,13 @@ export function Gallery() {
             <button
               key={img}
               onClick={() => setLightbox(img)}
-              className={`group relative overflow-hidden rounded-lg ${
-                index === 0 || index === 6 ? "aspect-[4/5] md:row-span-2" : "aspect-square"
-              }`}
+              className="group relative aspect-square overflow-hidden rounded-lg"
             >
               <img
                 src={getAssetUrl(img)}
                 alt={`Galerie LUXCO ${index + 1}`}
-                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                loading="lazy"
+                className="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <span className="text-3xl text-gold">+</span>

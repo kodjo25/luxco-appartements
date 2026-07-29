@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { SectionHeader } from "./SectionHeader";
 import { contact } from "@/lib/luxco-data";
+import { whatsappQr } from "@/lib/assets";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 
 export function Contact() {
@@ -116,6 +117,26 @@ export function Contact() {
                   </h4>
                   <p className="mt-1 text-white/90">Disponible 24h/24 — 7j/7</p>
                 </div>
+              </div>
+            </div>
+
+            <div className="mt-10 flex flex-col items-center gap-5 rounded-2xl border border-white/10 bg-black-card p-6 sm:flex-row sm:items-center">
+              <div className="rounded-xl bg-white p-3">
+                <img
+                  src={whatsappQr}
+                  alt="Code QR WhatsApp LUXCO +228 90 85 68 26"
+                  className="h-32 w-32"
+                />
+              </div>
+              <div className="text-center sm:text-left">
+                <h4 className="text-xs font-bold uppercase tracking-widest text-gold">
+                  Scannez pour discuter
+                </h4>
+                <p className="mt-2 text-white/90">
+                  Ouvrez WhatsApp et scannez ce code QR pour nous écrire
+                  directement au{" "}
+                  <span className="text-gold">+228 90 85 68 26</span>.
+                </p>
               </div>
             </div>
           </div>

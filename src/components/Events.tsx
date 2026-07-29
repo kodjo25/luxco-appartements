@@ -1,6 +1,6 @@
 import { SectionHeader } from "./SectionHeader";
-import { eventImages, contact } from "@/lib/luxco-data";
-import { getAssetUrl } from "@/lib/assets";
+import { contact } from "@/lib/luxco-data";
+import { eventPhotos } from "@/lib/assets";
 
 export function Events() {
   return (
@@ -17,16 +17,17 @@ export function Events() {
         />
 
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-          <div className="grid grid-cols-2 gap-4">
-            {eventImages.map((img, index) => (
+          <div className="grid gap-4">
+            {eventPhotos.map((img, index) => (
               <div
                 key={img}
-                className={`overflow-hidden rounded-lg ${index === 0 ? "col-span-2 aspect-[16/9]" : "aspect-square"}`}
+                className="aspect-[4/3] overflow-hidden rounded-lg"
               >
                 <img
-                  src={getAssetUrl(img)}
+                  src={img}
                   alt={`Place des Fêtes LUXCO ${index + 1}`}
-                  className="h-full w-full object-cover transition-transform duration-700 hover:scale-110"
+                  loading="lazy"
+                  className="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-110"
                 />
               </div>
             ))}
