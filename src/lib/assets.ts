@@ -35,6 +35,9 @@ import img34 from "../assets/img_34.jpeg.asset.json";
 import img35 from "../assets/img_35.jpeg.asset.json";
 import img36 from "../assets/img_36.jpeg.asset.json";
 import img37 from "../assets/img_37.png.asset.json";
+import event1 from "../assets/event_1.jpeg.asset.json";
+import event2 from "../assets/event_2.jpeg.asset.json";
+import whatsappQr from "../assets/whatsapp-qr.svg";
 
 const assetMap: Record<string, { url: string }> = {
   "img_0.png": img0,
@@ -82,3 +85,5 @@ export function getAssetUrl(filename: string): string {
 export const logoUrl = img0.url;
 export const heroSlides = [img9.url, img10.url, img11.url, img12.url];
 export const aboutImage = img13.url;
+export const eventPhotos = [event1.url, event2.url];
+export { whatsappQr };

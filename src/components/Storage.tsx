@@ -1,6 +1,6 @@
 import { SectionHeader } from "./SectionHeader";
 import { storageItem, contact } from "@/lib/luxco-data";
-import { getAssetUrl } from "@/lib/assets";
+
 import { Package } from "lucide-react";
 
 export function Storage() {
@@ -18,16 +18,8 @@ export function Storage() {
           description="Des espaces de stockage disponibles à la location pour vos marchandises, matériel ou archives."
         />
 
-        <div className="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-white/10 bg-black-card">
-          <div className="grid md:grid-cols-2">
-            <div className="relative h-72 md:h-auto">
-              <img
-                src={getAssetUrl(storageItem.image)}
-                alt={storageItem.title}
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent md:bg-gradient-to-t" />
-            </div>
+        <div className="mx-auto max-w-3xl overflow-hidden rounded-2xl border border-white/10 bg-black-card">
+          <div>
             <div className="p-8 md:p-12">
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold">
                 <Package size={24} />
