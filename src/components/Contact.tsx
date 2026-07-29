@@ -120,23 +120,24 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="mt-10 flex flex-col items-center gap-5 rounded-2xl border border-white/10 bg-black-card p-6 sm:flex-row sm:items-center">
-              <div className="rounded-xl bg-white p-3">
+            <div className="mt-10 flex flex-col items-center gap-6 rounded-2xl border border-white/10 bg-black-card p-6 sm:flex-row sm:items-center sm:justify-center">
+              <a
+                href="https://wa.me/22890856826"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Scanner pour discuter sur WhatsApp"
+                className="rounded-xl bg-white p-3 transition-transform hover:scale-105"
+              >
                 <img
                   src={whatsappQr}
                   alt="Code QR WhatsApp LUXCO +228 90 85 68 26"
-                  className="h-32 w-32"
+                  className="h-44 w-44 sm:h-52 sm:w-52 md:h-60 md:w-60"
                 />
-              </div>
+              </a>
               <div className="text-center sm:text-left">
-                <h4 className="text-xs font-bold uppercase tracking-widest text-gold">
+                <h4 className="text-sm font-bold uppercase tracking-widest text-gold">
                   Scannez pour discuter
                 </h4>
-                <p className="mt-2 text-white/90">
-                  Ouvrez WhatsApp et scannez ce code QR pour nous écrire
-                  directement au{" "}
-                  <span className="text-gold">+228 90 85 68 26</span>.
-                </p>
               </div>
             </div>
           </div>
