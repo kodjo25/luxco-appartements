@@ -1,7 +1,7 @@
 export const contact = {
   whatsapp: ["+22890856826", "+22896618353"],
   whatsappDisplay: ["+228 90 85 68 26", "+228 96 61 83 53"],
-  email: "koami66@gmail.com",
+  email: "contact@luxcoappartements.com",
   address: "Kégué, Togo",
 };
 
